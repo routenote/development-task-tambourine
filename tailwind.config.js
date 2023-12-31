@@ -15,6 +15,7 @@ module.exports = {
         'mid-grey': '#AEAEBA',
         'dark-grey': '#9898A3',
         'charcoal': '#202020',
+        'disabled': '#F2F2F4',
       },
       screens: {
         'xl': '1140px',

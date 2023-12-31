@@ -23,9 +23,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   setup: function setup() {
     var iconRef = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(true); // boolean to control whether to show icon or not
+    var error = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false); // boolean to control whether to show error button or not
 
     return {
-      iconRef: iconRef
+      iconRef: iconRef,
+      error: error
     };
   },
   data: function data() {
@@ -38,8 +40,9 @@ __webpack_require__.r(__webpack_exports__);
     toggleDropdown: function toggleDropdown() {
       this.showDropdown = !this.showDropdown;
     },
-    selectOption: function selectOption(option) {
+    selectOption: function selectOption(option, index) {
       this.showDropdown = false;
+      console.log("You selected ".concat(option, " at index ").concat(index));
     }
   }
 });
@@ -96,7 +99,13 @@ var render = function render() {
   return _c("div", {
     staticClass: "relative inline-block text-left"
   }, [_c("button", {
-    staticClass: "bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto",
+    staticClass: "btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto",
+    "class": {
+      "bg-disabled": _vm.error
+    },
+    attrs: {
+      disabled: _vm.error
+    },
     on: {
       click: _vm.toggleDropdown
     }
@@ -116,7 +125,7 @@ var render = function render() {
       alt: "arrow"
     }
   })]), _vm._v(" "), _vm.showDropdown ? _c("div", {
-    staticClass: "absolute top-full bottom-auto translate-y-2 left-0 w-72 bg-white z-1 border-2 border-solid border-mid-grey rounded-sm"
+    staticClass: "fixed bottom-0 left-0 w-full md:absolute md:top-full md:bottom-auto md:translate-y-2 md:left-0 md:w-72 pt-3 pb-3 bg-white z-1 border-t-2 md:border-2 border-solid border-mid-grey rounded-sm"
   }, _vm._l(_vm.options, function (option, index) {
     return _c("Option", {
       key: index,
@@ -125,7 +134,9 @@ var render = function render() {
         icon: _vm.iconRef
       },
       on: {
-        select: _vm.selectOption
+        select: function select($event) {
+          return _vm.selectOption(option, index);
+        }
       }
     });
   }), 1) : _vm._e()]);
@@ -152,7 +163,7 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "option hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-2 pt-2 pb-2 cursor-pointer",
+    staticClass: "option hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-4 pt-2 pb-2 cursor-pointer",
     on: {
       click: _vm.select
     }

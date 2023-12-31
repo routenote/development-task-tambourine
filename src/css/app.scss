@@ -3,21 +3,37 @@
 @tailwind utilities;
 
 
-@layer base {
+@font-face {
+    font-family: "CeraPro";
+    src: url("../css/cerapro-medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'Cera Pro';
-        src: url('../fonts/CeraPro-Regular.woff2') format('woff2'),
-            url('../fonts/CeraPro-Regular.woff') format('woff');
-    }
+@font-face {
+    font-family: "CeraPro";
+    src: url("../css/cerapro-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer base {
 
     body {
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 500;
-        font-family: 'Cera Pro', sans-serif;
         min-width: 100vw;
-        min-height: 100vh;    }
+        min-height: 100vh;
+    }
+
+    .btn {
+        font-family: 'cerapro-medium', sans-serif;
+    }
+
+    .option {
+        font-family: 'cerapro-regular', sans-serif;
+    }
 }
 
 
