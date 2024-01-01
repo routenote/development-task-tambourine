@@ -74,7 +74,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     select: function select() {
-      this.$emit('select', this.option);
+      this.$emit('select', this.option); // emit the select event with the option text
     }
   }
 });
@@ -99,7 +99,7 @@ var render = function render() {
   return _c("div", {
     staticClass: "relative inline-block text-left"
   }, [_c("button", {
-    staticClass: "btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto",
+    staticClass: "btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto h-10 mw",
     "class": {
       "bg-disabled": _vm.error
     },

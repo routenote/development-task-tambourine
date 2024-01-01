@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tailwind";
 
 @font-face {
     font-family: "CeraPro";
@@ -36,5 +37,3 @@
     }
 }
 
-
-@import "tailwind";

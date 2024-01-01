@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "CeraPro";
+  src: url("../css/cerapro-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraPro";
+  src: url("../css/cerapro-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
 */
@@ -464,9 +476,6 @@ body {
 .h-4{
   height: 1rem;
 }
-.h-10{
-  height: 2.5rem;
-}
 .w-4{
   width: 1rem;
 }
@@ -516,6 +525,10 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(174 174 186 / var(--tw-border-opacity));
 }
+.bg-disabled{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 244 / var(--tw-bg-opacity));
+}
 .bg-mid-grey{
   --tw-bg-opacity: 1;
   background-color: rgb(174 174 186 / var(--tw-bg-opacity));
@@ -523,10 +536,6 @@ body {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-disabled{
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 244 / var(--tw-bg-opacity));
 }
 .p-8{
   padding: 2rem;
@@ -562,18 +571,6 @@ body {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-@font-face {
-  font-family: "CeraPro";
-  src: url("../css/cerapro-medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "CeraPro";
-  src: url("../css/cerapro-regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
 }
 .hover\:bg-light-grey:hover{
   background-color: rgba(174, 174, 186, 0.12);

@@ -12,9 +12,8 @@
 
 <template>
     <div class="relative inline-block text-left">
-        <button @click="toggleDropdown" :disabled="error"
-            class="btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto"
-            :class="{ 'bg-disabled': error }">
+        <button @click="toggleDropdown" :disabled="error" :class="{ 'bg-disabled': error }"
+            class="btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto h-10 mw">
             <img v-if="iconRef" src="../../assets/option-icon-white.svg" alt="button icon" class="w-4 h-4 ">
             Button
             <img src="../../assets/arrow.svg" alt="arrow" class="w-4 h-4"
