@@ -8,7 +8,7 @@
 
 <template>
     <div @click="select"
-        class="option hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-4 pt-2 pb-2 cursor-pointer">
+        class="option md:hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-4 pt-2 pb-2 cursor-pointer">
         <img v-if="icon" src="../../assets/option-icon.svg" alt="option icon" class="text-mid-grey">
         {{ option }}
     </div>

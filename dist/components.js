@@ -163,7 +163,7 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "option hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-4 pt-2 pb-2 cursor-pointer",
+    staticClass: "option md:hover:bg-light-grey active:bg-light-grey focus:bg-light-grey flex justify-start gap-2 pl-4 pt-2 pb-2 cursor-pointer",
     on: {
       click: _vm.select
     }

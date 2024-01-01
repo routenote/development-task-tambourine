@@ -607,4 +607,7 @@ body {
   .md\:border-2{
     border-width: 2px;
   }
+  .md\:hover\:bg-light-grey:hover{
+    background-color: rgba(174, 174, 186, 0.12);
+  }
 }
