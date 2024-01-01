@@ -22,11 +22,13 @@ __webpack_require__.r(__webpack_exports__);
     Option: _option_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   setup: function setup() {
-    var iconRef = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(true); // boolean to control whether to show icon or not
+    var buttonIcon = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(true); // boolean to control whether to show button icon or not
+    var optionIcon = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(true); // boolean to control whether to show options icon or not
     var error = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false); // boolean to control whether to show error button or not
 
     return {
-      iconRef: iconRef,
+      buttonIcon: buttonIcon,
+      optionIcon: optionIcon,
       error: error
     };
   },
@@ -99,9 +101,10 @@ var render = function render() {
   return _c("div", {
     staticClass: "relative inline-block text-left"
   }, [_c("button", {
-    staticClass: "btn bg-mid-grey flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto h-10 mw",
+    staticClass: "btn flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto h-10 mw",
     "class": {
-      "bg-disabled": _vm.error
+      "bg-disabled": _vm.error,
+      "bg-mid-grey": !_vm.error
     },
     attrs: {
       disabled: _vm.error
@@ -109,7 +112,7 @@ var render = function render() {
     on: {
       click: _vm.toggleDropdown
     }
-  }, [_vm.iconRef ? _c("img", {
+  }, [_vm.buttonIcon ? _c("img", {
     staticClass: "w-4 h-4",
     attrs: {
       src: __webpack_require__(/*! ../../assets/option-icon-white.svg */ "./src/assets/option-icon-white.svg"),
@@ -131,7 +134,7 @@ var render = function render() {
       key: index,
       attrs: {
         option: option,
-        icon: _vm.iconRef
+        icon: _vm.optionIcon
       },
       on: {
         select: function select($event) {
