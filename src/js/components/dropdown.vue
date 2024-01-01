@@ -3,7 +3,8 @@
  *
  * @description The Dropdown component displays a button that, when clicked, toggles a dropdown menu. The dropdown menu contains a list of options that can be selected.
  *
- * @prop {boolean} iconRef - A boolean value that controls whether to show an icon in the button or not.
+ * @prop {boolean} buttonIcon - A boolean value that controls whether to show an icon in the button or not.
+ * @prop {boolean} optionIcon - A boolean value that controls whether to show an icon in the options or not.
  * @prop {boolean} error - A boolean value that controls whether to show an error/disabled button or not.
  * @prop {Array} options - An array of options to be displayed in the dropdown menu.
  *
