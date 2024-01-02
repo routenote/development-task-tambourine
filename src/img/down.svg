@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-down" clip-path="url(#clip0_291_1222)">
+<path id="arrow-down (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M7.6217 11.1412L0.865112 4.47455L1.80158 3.52545L8.08357 9.72384L14.1921 3.53181L15.1413 4.4682L8.56453 11.1349C8.44035 11.2607 8.27125 11.3321 8.09443 11.3333C7.91761 11.3345 7.74756 11.2654 7.6217 11.1412Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_291_1222">
+<rect width="16" height="16" fill="white" transform="translate(0 16) rotate(-90)"/>
+</clipPath>
+</defs>
+</svg>
