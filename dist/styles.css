@@ -32,8 +32,11 @@ body {
   gap: 8px;cursor: pointer;
   
 }
+.button:disabled {
+  background: var(--core-midgrey-light-light-16, #f2f2f4);
+}
 
-.button:hover,
+/* .button:hover,
 .button:focus {
   background: var(--core-midgrey-light-light-16, #f2f2f4);
 }
@@ -44,7 +47,7 @@ body {
 
 .modal-open .button {
   background: var(--core-midgrey-light-light-16, #f2f2f4);
-}
+} */
 
 
 @media screen and (min-width: 720px) {
