@@ -154,13 +154,13 @@ var render = function render() {
     _c = _vm._self._c;
   return _c("div", {
     staticClass: "font-CeraProRegular text-base text-left flex flex-row"
-  }, [_c("div", {
+  }, [_vm.icon ? _c("div", {
     staticClass: "basis-1/6 pl-2"
   }, [_c("Filler_Icon", {
     attrs: {
       colour: "fill-black"
     }
-  })], 1), _vm._v(" "), _c("div", {
+  })], 1) : _vm._e(), _vm._v(" "), _c("div", {
     staticClass: "basis-1/6 p-1"
   }, [_c("a", {
     attrs: {
