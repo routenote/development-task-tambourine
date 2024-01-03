@@ -1,7 +1,7 @@
 <template>
   
     <div class="flex items-center justify-center">
-     <Dropdown title="Button" :items="services" :icon_flag="true" :isEnable="true"/>     
+     <Dropdown title="Button" :items="services" :icon="true" :isEnable="true"/>     
     </div>
   </template>
   

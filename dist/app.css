@@ -581,6 +581,9 @@ video {
 .fill-white {
   fill: #fff;
 }
+.fill-black {
+  fill: #000;
+}
 .p-1 {
   padding: 0.25rem;
 }

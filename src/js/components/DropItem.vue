@@ -1,7 +1,7 @@
 <template>
     <div class=" font-CeraProRegular text-base text-left flex flex-row">
         <div class="basis-1/6 pl-2 ">
-          <fillerB v-bind:icon_flag="icon_flag"></fillerB>
+          <Filler_Icon colour="fill-black"> </Filler_Icon>
         </div>
         <div class="basis-1/6 p-1">
           <a :href="link">{{ title }}</a>
@@ -11,13 +11,13 @@
 
 <script>
 
-import fillerB from './fillerB.vue';
+import Filler_Icon from './Filler_Icon.vue';
 
 export default {
     name:"DropItem",
-    props: ['link', 'title','icon_flag'],
+    props: ['link', 'title','icon'],
     components:{
-        fillerB,
+      Filler_Icon,
     }
 }
 </script>
