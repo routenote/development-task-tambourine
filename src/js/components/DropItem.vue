@@ -1,4 +1,5 @@
 <template>
+  <!----for list element and its icon colour------>
     <div class=" font-CeraProRegular text-base text-left flex flex-row">
         <div class="basis-1/6 pl-2 ">
           <Filler_Icon colour="fill-black"> </Filler_Icon>

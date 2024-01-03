@@ -210,24 +210,19 @@ var render = function render() {
       href: "#"
     }
   }, [_vm._v("\n         " + _vm._s(_vm.title) + " \n       ")])]), _vm._v(" "), _vm.isOpen ? _c("div", {
-    staticClass: "border-1 pr-2 pt-2 basis-1/4"
+    staticClass: "pr-2 pt-2 basis-1/4"
   }, [_c("icon_arrow", {
     attrs: {
       icon_rotate: "true"
     }
   })], 1) : _c("div", {
-    staticClass: "border-1 pr-2 pt-3 basis-1/4"
+    staticClass: "pr-2 pt-3 basis-1/4"
   }, [_c("icon_arrow", {
     attrs: {
       icon_rotate: "false"
     }
-  })], 1)]), _vm._v(" "), _c("transition", {
-    attrs: {
-      name: "fade",
-      appear: ""
-    }
-  }, [_vm.isOpen ? _c("div", {
-    staticClass: "border-2 w-64"
+  })], 1)]), _vm._v(" "), _vm.isOpen ? _c("div", {
+    staticClass: "border-2 w-80 mt-2"
   }, _vm._l(_vm.items, function (item, i) {
     return _c("div", {
       key: i,
@@ -239,7 +234,7 @@ var render = function render() {
         icon: _vm.icon
       }
     })], 1);
-  }), 0) : _vm._e()])], 1);
+  }), 0) : _vm._e()]);
 };
 var staticRenderFns = [];
 render._withStripped = true;

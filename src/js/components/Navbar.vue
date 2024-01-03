@@ -1,6 +1,7 @@
 <template>
   
     <div class="flex items-center justify-center">
+      <!--to make the button Disabled and to show the button with or without icon-->
      <Dropdown title="Button" :items="services" :icon="true" :isEnable="true"/>     
     </div>
   </template>

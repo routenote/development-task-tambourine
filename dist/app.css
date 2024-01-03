@@ -489,11 +489,11 @@ video {
 .pointer-events-none {
   pointer-events: none;
 }
-.absolute {
-  position: absolute;
-}
 .float-right {
   float: right;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .block {
   display: block;
@@ -510,14 +510,11 @@ video {
 .w-3 {
   width: 0.75rem;
 }
-.w-32 {
-  width: 8rem;
-}
 .w-36 {
   width: 9rem;
 }
-.w-64 {
-  width: 16rem;
+.w-80 {
+  width: 20rem;
 }
 .w-full {
   width: 100%;
@@ -533,9 +530,6 @@ video {
 }
 .rotate-180 {
   --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .flex-row {
@@ -556,11 +550,6 @@ video {
 .justify-center {
   justify-content: center;
 }
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -578,11 +567,11 @@ video {
 .bg-opacity-12 {
   --tw-bg-opacity: .12;
 }
-.fill-white {
-  fill: #fff;
-}
 .fill-black {
   fill: #000;
+}
+.fill-white {
+  fill: #fff;
 }
 .p-1 {
   padding: 0.25rem;
@@ -597,9 +586,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.pl-1 {
-  padding-left: 0.25rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
@@ -635,13 +621,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 .hover\:bg-gray-mid:hover {
   --tw-bg-opacity: 1;

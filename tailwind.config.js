@@ -7,7 +7,7 @@ module.exports = {
         'src/**/*.vue',
       ],
       options: {},
-    },
+    },// customize the button color and font
     theme: {extend: {
       colors: {
         gray:{
