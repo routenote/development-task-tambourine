@@ -2,11 +2,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="app.css">
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/http-vue-loader"></script>
     </head>
     <body>
         <div id="components" class="block w-full">
-            <div class="p-8 flex flex-col overflow-x-hidden justify-start items-start">
-                <!--insert components here-->
+            <div class="p-8 flex flex-row overflow-x-hidden justify-start items-start">
+                
+                <primary-button></primary-button>
             </div>
         </div>
 
@@ -16,5 +19,6 @@
                 el: "#components"
             })
         </script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     </body>
 </html>

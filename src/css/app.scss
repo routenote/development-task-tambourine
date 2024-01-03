@@ -1,7 +1,14 @@
+@import "tailwind";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {}
 
-@import "tailwind"
+:root{
+    --mid-grey: var(#AEAEBA);
+    --mid-grey-light: var(rgba(160, 160, 171, 0.16));
+    --white: var(#ffffff);
+    --dark-grey: var(#9898A3);
+    --charcoal: var(#202020);
+}
