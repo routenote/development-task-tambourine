@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <link
+    href="./cerapro-medium.otf"
+    rel="stylesheet"
+  />
+  <link
+    href="./cerapro-regular.otf"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+      <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  
+     
+      <main>
+        <div class="container dropdown-desk">
+          <button class="button" type="button" data-modal-open><svg class="icon-filler"
+            width="16"
+            height="16"
+            
+            >
+            
+         
+
+            </svg>Button<svg class="icon-drop"
+            width="16"
+            height="16"
+           
+            >
+           
+          
+            </svg>
+          </button>
+          <div class="dropdown-content-desk">
+            <ul class="dropdown-content ">
+              <li><a class="link-list" href="#"><svg class="filler" width="16" height="16"
+                    >
+               
+            
+                  </svg>Option</a></li>
+              <li><a class="link-list" href="#"><svg class="filler" width="16" height="16"
+                    >
+            
+                 
+            
+                  </svg>Option
+                </a></li>
+              <li><a class="link-list" href="#"><svg class="filler" width="16" height="16"
+                    >
+            
+            
+                  </svg>Option</a></li>
+              <li><a class="link-list" href="#"><svg class="filler" width="16" height="16"
+                    >
+            
+                 
+            
+                  </svg>Option</a></li>
+              <li><a class="link-list" href="#"><svg class="filler" width="16" height="16"
+                   >
+            
+                  
+            
+                  </svg>Option</a></li>
+            </ul>
+          </div>
+
+        </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal" data-modal>
+          <button class="button btn-close"  aria-label="Button" type="button"  data-modal-close ><svg class="filler"
+            width="16"
+            height="16"
+           
+          >
+            
+          
+
+          </svg> Button <svg class="icon-drop"
+            width="16"
+            height="16"
+            
+          >
+       
+            
+
+          </svg></button>
+           
+           <div class="nav">
+           <ul class="dropdown-content">
+            <li><a class="link-list" href="#"><svg class="filler"
+              width="16"
+              height="16"
+              
+            >
+           
+  
+            </svg>Option</a></li>
+            <li><a class="link-list" href="#"><svg class="filler"
+              width="16"
+              height="16"
+             
+            >
+            
+              
+  
+            </svg>Option
+          </a></li>
+            <li><a class="link-list" href="#"><svg class="filler"
+              width="16"
+              height="16"
+              
+            >
+              
+              
+  
+            </svg>Option</a></li>
+            <li><a class="link-list" href="#"><svg class="filler"
+              width="16"
+              height="16"
+              
+            >
+             
+              
+  
+            </svg>Option</a></li>
+            <li>
+              <a class="link-list" href="#"><svg class="filler"
+              width="16"
+              height="16"
+            >
+              
+  
+            </svg>Option</a></li>
+           </ul>
+
+           
+          </div>
+          
+        </div>
+      </div>
+      
+      <script src="../src/js/menu.js"></script>
+    </main>
+</body>
+</html>
