@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+    @font-face {
+        font-family: CeraProMedium;
+        font-weight: 400;
+        src: url("./cerapro-medium.otf") format("otf");
+      }
+      @font-face {
+        font-family: CeraProRegular;
+        font-weight: 400;
+        src: url("./cerapro-regular.otf") format("otf");
+      }
+}
 
 @import "tailwind"
