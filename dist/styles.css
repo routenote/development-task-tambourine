@@ -31,9 +31,22 @@ body {
   background-color: #9898a3;
   gap: 8px;cursor: pointer;
   
-  
-
 }
+
+.button:hover,
+.button:focus {
+  background: var(--core-midgrey-light-light-16, #f2f2f4);
+}
+
+.button:active {
+  background: var(--core-midgrey-light-light-16, #f2f2f4);
+}
+
+.modal-open .button {
+  background: var(--core-midgrey-light-light-16, #f2f2f4);
+}
+
+
 @media screen and (min-width: 720px) {
   .button{ margin-bottom: 9px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
