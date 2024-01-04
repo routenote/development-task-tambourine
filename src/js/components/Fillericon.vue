@@ -6,7 +6,7 @@
 <script>
 
 export default {
-    name: 'Filler_Icon',
+    name: 'Fillericon',
     props: ['colour'],
   }
 

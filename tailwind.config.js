@@ -24,7 +24,15 @@ module.exports = {
         CeraProMedium: "CeraProMedium",
         CeraProRegular: "CeraProRegular",
       },
-    },},
+      screens: {
+        'sm': {'max': '540px'},
+        'md': {'max': '720px'},
+        'lg': {'max': '960px'},
+        'xl': {'max': '1140px'},
+      },
+    },
+    
+  },
     plugins: [],
     prefix: '',
   }

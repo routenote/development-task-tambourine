@@ -11,7 +11,7 @@
 
 export default {
 
-    name: 'icon_arrow',
+    name: 'iconarrow',
     props: ['icon_rotate'],
    
 }
