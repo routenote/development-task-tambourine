@@ -374,7 +374,7 @@ var render = function render() {
     style: _vm.cssVars
   }, [_c("label", {
     staticClass: "toggle"
-  }, [_vm._v("Button with icon\n        "), _c("input", {
+  }, [_vm._v("Button with icon\n    "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -551,7 +551,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.arrow-down[data-v-e93747f4]{\n    transform: rotate(180deg);\n    transition: all 0.3s ease;\n}\n.arrow-up[data-v-e93747f4]{\n    transform: rotate(0deg);\n    transition: all 0.3s ease;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.arrow-down[data-v-e93747f4] {\n    transform: rotate(180deg);\n    transition: all 0.3s ease;\n}\n.arrow-up[data-v-e93747f4] {\n    transform: rotate(0deg);\n    transition: all 0.3s ease;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -575,7 +575,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown-box[data-v-21ab7a5d]{\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid  var(--mid-grey);\n    background-color:  #ffffff;\n}\n.dropdown-box__show[data-v-21ab7a5d]{\n    display: flex;\n}\n@media only screen and (max-width: 720px){\n.dropdown-box[data-v-21ab7a5d]{\n    width: 100vw;\n    max-width: unset;\n    min-width: unset;\n    border: none;\n    border-top: 2px solid  var(--mid-grey);\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown-box[data-v-21ab7a5d] {\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid var(--mid-grey);\n    background-color: #ffffff;\n}\n.dropdown-box__show[data-v-21ab7a5d] {\n    display: flex;\n}\n@media only screen and (max-width: 720px) {\n.dropdown-box[data-v-21ab7a5d] {\n        width: 100vw;\n        max-width: unset;\n        min-width: unset;\n        border: none;\n        border-top: 2px solid var(--mid-grey);\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -599,7 +599,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box[data-v-feaba4e0]{\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box[data-v-feaba4e0]:hover{\n    background-color: var(--light-grey);\n}\n.item-name[data-v-feaba4e0]{\n    color: var(--charcoal);\n}\n@media only screen and (max-width: 720px){\n.item-box[data-v-feaba4e0]:hover{\n        background-color: unset;\n}\n.item-box[data-v-feaba4e0]:active{\n        background-color: var(--light-grey);\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box[data-v-feaba4e0] {\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box[data-v-feaba4e0]:hover {\n    background-color: var(--light-grey);\n}\n.item-name[data-v-feaba4e0] {\n    color: var(--charcoal);\n}\n@media only screen and (max-width: 720px) {\n.item-box[data-v-feaba4e0]:hover {\n        background-color: unset;\n}\n.item-box[data-v-feaba4e0]:active {\n        background-color: var(--light-grey);\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -623,7 +623,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-container{\n    font-family: Cera PRO;\n    width: 100vw;\n    height: auto;\n    background-color: var(--white);\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    gap: 8px;\n    padding: 2vw;\n}\n.toggle {\n  display: flex;\n  gap: 5px;\n  align-items: center;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  color: var(--charcoal);\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n}\n.toggle input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n  height: 0;\n  width: 0;\n}\n.toggle_checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  background-color: var(--light-grey);\n  transition: background-color 0.3s ease;\n}\n.toggle:hover input ~ .toggle_checkmark {\n  background-color: var(--mid-grey-light);\n}\n.toggle input:checked ~ .toggle_checkmark {\n  background-color: var(--blue);\n}\n.toggle_checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n.toggle input:checked ~ .toggle_checkmark:after {\n  display: block;\n}\n.toggle .toggle_checkmark:after {\n  left: 8px;\n  top: 4px;\n  width: 8px;\n  height: 14px;\n  border: solid var(--white);\n  border-width: 0 3px 3px 0;\n  transform: rotate(45deg);\n}\n@media only screen and (max-width: 720px){\n.main-container{\n    height: 100vh;\n    justify-content: space-between;\n    gap: unset;\n    background-color: var(--mid-grey-light);\n    padding: 0;\n}\n.toggle{\n    display: none;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-container {\n  font-family: Cera PRO;\n  width: 100vw;\n  height: auto;\n  background-color: var(--white);\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  gap: 8px;\n  padding: 2vw;\n}\n.toggle {\n  display: flex;\n  gap: 5px;\n  align-items: center;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  color: var(--charcoal);\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n}\n.toggle input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n  height: 0;\n  width: 0;\n}\n.toggle_checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  background-color: var(--light-grey);\n  transition: background-color 0.3s ease;\n}\n.toggle:hover input~.toggle_checkmark {\n  background-color: var(--mid-grey-light);\n}\n.toggle input:checked~.toggle_checkmark {\n  background-color: var(--blue);\n}\n.toggle_checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n.toggle input:checked~.toggle_checkmark:after {\n  display: block;\n}\n.toggle .toggle_checkmark:after {\n  left: 8px;\n  top: 4px;\n  width: 8px;\n  height: 14px;\n  border: solid var(--white);\n  border-width: 0 3px 3px 0;\n  transform: rotate(45deg);\n}\n@media only screen and (max-width: 720px) {\n.main-container {\n    height: 100vh;\n    justify-content: space-between;\n    gap: unset;\n    background-color: var(--mid-grey-light);\n    padding: 0;\n}\n.toggle {\n    display: none;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -647,7 +647,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.button-box[data-v-9ecd6690]{\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: var(--mid-grey);\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.button-box__clicked[data-v-9ecd6690]{\n  background-color: var(--dark-grey); \n  transition: background-color 0.3s ease;\n}\n.button-box[data-v-9ecd6690]:disabled{\n  background-color: var(--mid-grey-light);\n  cursor: not-allowed;\n}\n.button-name[data-v-9ecd6690]{\n  color: var(--white);\n  /* font-feature-settings: 'clig' off, 'liga' off; */\n  font-family: Cera PRO medium;\n}\n@media only screen and (max-width: 720px){\n.button-box[data-v-9ecd6690]{\n    margin: 5vw;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.button-box[data-v-9ecd6690] {\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: var(--mid-grey);\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.button-box__clicked[data-v-9ecd6690] {\n  background-color: var(--dark-grey);\n  transition: background-color 0.3s ease;\n}\n.button-box[data-v-9ecd6690]:disabled {\n  background-color: var(--mid-grey-light);\n  cursor: not-allowed;\n}\n.button-name[data-v-9ecd6690] {\n  color: var(--white);\n  /* font-feature-settings: 'clig' off, 'liga' off; */\n  font-family: Cera PRO medium;\n}\n@media only screen and (max-width: 720px) {\n.button-box[data-v-9ecd6690] {\n    margin: 5vw;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

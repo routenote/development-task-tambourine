@@ -1,63 +1,63 @@
 <template>
-    <div class="main-container" :style="cssVars">
-        <label class="toggle">Button with icon
-            <input ref="buttonCheck" type="checkbox" v-model="hasPlusIcon">
-            <span class="toggle_checkmark"></span>
-        </label>
-        <PrimaryButton :has-plus-icon="hasPlusIcon" :toggle-dropdown="toggleDropdown" :is-open="isOpen"></PrimaryButton>
-        <Dropdown :has-plus-icon="hasPlusIcon" :is-open="isOpen"></Dropdown>
-    </div>
+  <div class="main-container" :style="cssVars">
+    <label class="toggle">Button with icon
+      <input ref="buttonCheck" type="checkbox" v-model="hasPlusIcon">
+      <span class="toggle_checkmark"></span>
+    </label>
+    <PrimaryButton :has-plus-icon="hasPlusIcon" :toggle-dropdown="toggleDropdown" :is-open="isOpen"></PrimaryButton>
+    <Dropdown :has-plus-icon="hasPlusIcon" :is-open="isOpen"></Dropdown>
+  </div>
 </template>
 
 <script>
-    import PrimaryButton from './PrimaryButton.vue';
-    import Dropdown from './Dropdown.vue';
+import PrimaryButton from './PrimaryButton.vue';
+import Dropdown from './Dropdown.vue';
 
-    export default {
-        name : 'main-container',
-        components: {
-          PrimaryButton,
-          Dropdown
-        },
-        data() {
-           return{
-            isMobileDevice: false,
-            isOpen: false,
-            hasPlusIcon: true,
-           }
-        },
-        computed: {
-            cssVars() {
-                return {
-                    '--mid-grey': '#AEAEBA',
-                    '--mid-grey-light': 'rgba(160, 160, 171, 0.16)',
-                    '--light-grey': 'rgba(160, 160, 171, 0.12)',
-                    '--white': '#ffffff',
-                    '--dark-grey': '#9898A3',
-                    '--charcoal': '#202020',
-                    '--blue': '#2196F3',
-                }
-            }
-        },
-        methods: {
-            toggleDropdown(){
-                this.isOpen = !this.isOpen;
-            }
-        }
-    };
+export default {
+  name: 'main-container',
+  components: {
+    PrimaryButton,
+    Dropdown
+  },
+  data() {
+    return {
+      isMobileDevice: false,
+      isOpen: false,
+      hasPlusIcon: true,
+    }
+  },
+  computed: {
+    cssVars() {
+      return {
+        '--mid-grey': '#AEAEBA',
+        '--mid-grey-light': 'rgba(160, 160, 171, 0.16)',
+        '--light-grey': 'rgba(160, 160, 171, 0.12)',
+        '--white': '#ffffff',
+        '--dark-grey': '#9898A3',
+        '--charcoal': '#202020',
+        '--blue': '#2196F3',
+      }
+    }
+  },
+  methods: {
+    toggleDropdown() {
+      this.isOpen = !this.isOpen;
+    }
+  }
+};
 </script>
 
 <style>
-.main-container{
-    font-family: Cera PRO;
-    width: 100vw;
-    height: auto;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
-    padding: 2vw;
+.main-container {
+  font-family: Cera PRO;
+  width: 100vw;
+  height: auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 2vw;
 }
 
 .toggle {
@@ -92,11 +92,11 @@
   transition: background-color 0.3s ease;
 }
 
-.toggle:hover input ~ .toggle_checkmark {
+.toggle:hover input~.toggle_checkmark {
   background-color: var(--mid-grey-light);
 }
 
-.toggle input:checked ~ .toggle_checkmark {
+.toggle input:checked~.toggle_checkmark {
   background-color: var(--blue);
 }
 
@@ -106,7 +106,7 @@
   display: none;
 }
 
-.toggle input:checked ~ .toggle_checkmark:after {
+.toggle input:checked~.toggle_checkmark:after {
   display: block;
 }
 
@@ -122,8 +122,8 @@
   transform: rotate(45deg);
 }
 
-@media only screen and (max-width: 720px){
-  .main-container{
+@media only screen and (max-width: 720px) {
+  .main-container {
     height: 100vh;
     justify-content: space-between;
     gap: unset;
@@ -132,8 +132,8 @@
   }
 }
 
-@media only screen and (max-width: 720px){
-  .toggle{
+@media only screen and (max-width: 720px) {
+  .toggle {
     display: none;
   }
 }

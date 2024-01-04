@@ -1,33 +1,33 @@
 <template>
-    <button class="item-box" >
+    <button class="item-box">
         <PlusIcon v-if="hasPlusIcon" status="grey"></PlusIcon>
         <p class="item-name">{{ name }}</p>
     </button>
 </template>
 
 <script>
-    import PlusIcon from './PlusIcon.vue';
+import PlusIcon from './PlusIcon.vue';
 
-    export default {
-        name : 'dropdown-item',
-        components: {
-          PlusIcon
+export default {
+    name: 'dropdown-item',
+    components: {
+        PlusIcon
+    },
+    props: {
+        hasPlusIcon: {
+            type: Boolean,
+            default: true,
         },
-        props: {
-            hasPlusIcon: {
-                type: Boolean,
-                default: true,
-            },
-            name: {
-                type: String,
-                default: 'Option'
-            }
+        name: {
+            type: String,
+            default: 'Option'
         }
-    };
+    }
+};
 </script>
 
 <style scoped>
-.item-box{
+.item-box {
     display: flex;
     width: 100%;
     padding: 8px 12px;
@@ -38,22 +38,21 @@
     transition: background-color 0.3s ease;
 }
 
-.item-box:hover{
+.item-box:hover {
     background-color: var(--light-grey);
 }
 
-.item-name{
+.item-name {
     color: var(--charcoal);
 }
 
-@media only screen and (max-width: 720px){
-    .item-box:hover{
+@media only screen and (max-width: 720px) {
+    .item-box:hover {
         background-color: unset;
     }
 
-    .item-box:active{
+    .item-box:active {
         background-color: var(--light-grey);
     }
 }
-
 </style>
