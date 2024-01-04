@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <div id="components" class="block w-full">
-            <div class="p-8 flex flex-col overflow-x-hidden justify-start items-start">
-                <!--insert components here-->
-            </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Developement Task" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main>
+      <div id="components" class="block w-full">
+        <div
+          class="p-8 flex flex-col overflow-x-hidden justify-start items-start"
+        >
+          <!--insert components here-->
+          <Dropdown />
         </div>
+      </div>
+    </main>
 
-        <script src="components.js"></script>
-        <script>
-            new components({
-                el: "#components"
-            })
-        </script>
-    </body>
+    <script src="components.js"></script>
+    <script>
+      new components({
+        el: "#components",
+      });
+    </script>
+  </body>
 </html>

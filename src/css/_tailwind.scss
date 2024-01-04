@@ -1,0 +1,23 @@
+// START: General styles
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row justify-center items-center py-2 px-4 outline-none;
+}
+// END: General styles
+
+// START: Dropdown styles
+.dropdown-menu {
+  @apply flex flex-col py-4;
+}
+
+.dropdown-options {
+  @apply flex flex-row items-center px-4 md:px-3 py-2 cursor-pointer hover:bg-grey-300 active:bg-grey-300;
+}
+// END: Dropdown styles
