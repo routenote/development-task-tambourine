@@ -2,19 +2,20 @@
 import { ref } from "vue";
 
 const props = defineProps({
-  isDisabled: Boolean,
   title: String,
   containerStyles: String,
   textStyles: String,
   leftIcon: String,
   rightIcon: String,
+  isDisabled: Boolean,
+  isError: Boolean,
 });
 </script>
 
 <template>
   <button
     type="button"
-    :class="['custom-btn', containerStyles, textStyles]"
+    :class="`custom-btn ${containerStyles} ${textStyles} ${isError && 'error'}`"
     @click="$emit('handleClick')"
     :disabled="isDisabled"
   >

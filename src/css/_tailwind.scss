@@ -10,6 +10,10 @@
 .custom-btn {
   @apply flex flex-row justify-center items-center py-2 px-4 outline-none;
 }
+
+.error {
+  @apply border-4 border-red-600;
+}
 // END: General styles
 
 // START: Dropdown styles
