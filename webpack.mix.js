@@ -26,3 +26,12 @@ mix.vue({
             }
         });
         //global settings including base directory, index for generated site, and tailwind postcss
+        // To process and copy SVG files. 
+        mix.override(config => {
+            config.module.rules.find(rule => rule.test.test('.svg')).exclude = /\.svg$/
+        
+            config.module.rules.push({
+                test: /\.svg$/,
+                use: [{ loader: 'html-loader' }],
+            })
+        }) 

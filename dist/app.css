@@ -376,6 +376,16 @@ video {
 [hidden] {
   display: none;
 }
+  @font-face {
+    font-family: CeraProMedium;
+    font-weight: 400;
+    src: url("./cerapro-medium.otf") format("otf");
+  }
+  @font-face {
+    font-family: CeraProRegular;
+    font-weight: 400;
+    src: url("./cerapro-regular.otf") format("otf");
+  }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -476,14 +486,54 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
+.float-right {
+  float: right;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .block {
   display: block;
 }
 .flex {
   display: flex;
 }
+.h-10 {
+  height: 2.5rem;
+}
+.h-3 {
+  height: 0.75rem;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-36 {
+  width: 9rem;
+}
+.w-80 {
+  width: 20rem;
+}
 .w-full {
   width: 100%;
+}
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+.basis-1\/6 {
+  flex-basis: 16.666667%;
+}
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -497,6 +547,98 @@ video {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
+.border-2 {
+  border-width: 2px;
+}
+.bg-gray-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(152 152 163 / var(--tw-bg-opacity));
+}
+.bg-gray-mid {
+  --tw-bg-opacity: 1;
+  background-color: rgb(174 174 186 / var(--tw-bg-opacity));
+}
+.bg-opacity-12 {
+  --tw-bg-opacity: .12;
+}
+.fill-black {
+  fill: #000;
+}
+.fill-white {
+  fill: #fff;
+}
+.p-1 {
+  padding: 0.25rem;
+}
 .p-8 {
   padding: 2rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.pr-1 {
+  padding-right: 0.25rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.font-CeraProMedium {
+  font-family: CeraProMedium;
+}
+.font-CeraProRegular {
+  font-family: CeraProRegular;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.hover\:bg-gray-mid:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(174 174 186 / var(--tw-bg-opacity));
+}
+.hover\:bg-opacity-12:hover {
+  --tw-bg-opacity: .12;
+}
+@media (max-width: 720px) {
+
+  .md\:h-80 {
+    height: 20rem;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
+  }
+
+  .md\:bg-gray-mid {
+    --tw-bg-opacity: 1;
+    background-color: rgb(174 174 186 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-opacity-12 {
+    --tw-bg-opacity: .12;
+  }
 }
