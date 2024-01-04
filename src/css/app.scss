@@ -1,9 +1,12 @@
-@import "tailwind";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {}
+
+@import "tailwind";
+@import "_variables.css";
 
 :root{
     --mid-grey: var(#AEAEBA);
@@ -11,4 +14,14 @@
     --white: var(#ffffff);
     --dark-grey: var(#9898A3);
     --charcoal: var(#202020);
+}
+
+@font-face {
+    font-family: Cera PRO;
+    font-weight: bold;
+    src: url(cerapro-medium.otf);
+}
+@font-face {
+    font-family: Cera PRO;
+    src: url(cerapro-regular.otf);
 }

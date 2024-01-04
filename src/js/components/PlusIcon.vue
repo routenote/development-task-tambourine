@@ -11,8 +11,8 @@
 
 <script>
 const colors = {
-    white: 'var(--white)',
-    grey: 'var(--mid-grey)',
+    white: '#ffffff',
+    grey: '#AEAEBA',
 }
 
 export default {
@@ -27,7 +27,6 @@ export default {
             }
         }
     },
-
     computed: {
         iconBackgroundColor() {
             return colors[this.status]

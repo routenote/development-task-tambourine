@@ -1,8 +1,8 @@
 <template>
-    <button @click="toggleDropdown" :class="['button-box', this.isOpen ? 'button-box__clicked' : '']">
-        <PlusIcon v-if="this.option" status="white"></PlusIcon>
+    <button @click="toggleDropdown" :class="['button-box', isOpen ? 'button-box__clicked' : '']">
+        <PlusIcon v-if="hasPlusIcon" status="white"></PlusIcon>
         <p class="button-name">{{ name }}</p>
-        <ArrowIcon :isOpen="this.isOpen"></ArrowIcon>
+        <ArrowIcon :isOpen="isOpen"></ArrowIcon>
     </button>
 </template>
 
@@ -17,55 +17,71 @@
           PlusIcon
         },
         props: {
-            option: {
+            hasPlusIcon: {
                 type: Boolean,
-                default: true,
+                default: false,
+            },
+            toggleDropdown: {
+                type: Function,
+                default: () => {}
+            },
+            isOpen: {
+              type: Boolean,
+              default: false,
             }
         },
         data() {
             return {
-                name: 'Button',
-                isOpen: false,
-            }
-        },
-        methods: {
-            toggleDropdown(){
-                this.isOpen = !this.isOpen;
+                name: 'Button'
             }
         }
     };
 </script>
 
-<style scoped>
+<style>
+:root{
+    --mid-grey: var(#AEAEBA);
+    --mid-grey-light: var(rgba(160, 160, 171, 0.16));
+    --white: var(#ffffff);
+    --dark-grey: var(#9898A3);
+    --charcoal: var(#202020);
+}
 .button-box{
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: var(--mid-grey);
+  background-color: #AEAEBA;
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+@media only screen and (max-width: 720px){
+  .button-box{
+    margin: 5vw;
+  }
+}
+
 .button-box__clicked{
-  background-color: var(--dark-grey); 
+  background-color: #9898A3; 
   transition: background-color 0.3s ease;
 }
 
 .button-box:disabled{
-  background-color: var(--mid-grey-light);
+  background-color: rgba(160, 160, 171, 0.16);
   cursor: not-allowed;
 }
 
 .button-name{
-  color: var(--white);
+  color: #ffffff;
   /* font-feature-settings: 'clig' off, 'liga' off; */
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 </style>
