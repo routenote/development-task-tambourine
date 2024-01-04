@@ -1,7 +1,7 @@
 <template>
-  <button @click="toggleDropdown" :class="['button-box', isOpen ? 'button-box__clicked' : '']">
+  <button @click="toggleDropdown" :class="['button', isOpen ? 'button_clicked' : '']">
     <PlusIcon v-if="hasPlusIcon" status="white"></PlusIcon>
-    <p class="button-name">{{ name }}</p>
+    <p class="button__name">{{ name }}</p>
     <ArrowIcon :isOpen="isOpen"></ArrowIcon>
   </button>
 </template>
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.button-box {
+.button {
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -52,24 +52,24 @@ export default {
   transition: background-color 0.3s ease;
 }
 
-.button-box__clicked {
+.button_clicked {
   background-color: var(--dark-grey);
   transition: background-color 0.3s ease;
 }
 
-.button-box:disabled {
+.button:disabled {
   background-color: var(--mid-grey-light);
   cursor: default;
 }
 
-.button-name {
+.button__name {
   color: var(--white);
   /* font-feature-settings: 'clig' off, 'liga' off; */
   font-family: Cera PRO medium;
 }
 
 @media only screen and (max-width: 720px) {
-  .button-box {
+  .button {
     margin: 5vw;
   }
 }

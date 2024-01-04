@@ -2,7 +2,7 @@
   <div class="main-container" :style="cssVars">
     <label class="toggle">Button with icon
       <input ref="buttonCheck" type="checkbox" v-model="hasPlusIcon">
-      <span class="toggle_checkmark"></span>
+      <span class="toggle__checkmark"></span>
     </label>
     <PrimaryButton :has-plus-icon="hasPlusIcon" :toggle-dropdown="toggleDropdown" :is-open="isOpen"></PrimaryButton>
     <Dropdown :has-plus-icon="hasPlusIcon" :is-open="isOpen"></Dropdown>
@@ -82,7 +82,7 @@ export default {
   width: 0;
 }
 
-.toggle_checkmark {
+.toggle__checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -92,25 +92,25 @@ export default {
   transition: background-color 0.3s ease;
 }
 
-.toggle:hover input~.toggle_checkmark {
+.toggle:hover input~.toggle__checkmark {
   background-color: var(--mid-grey-light);
 }
 
-.toggle input:checked~.toggle_checkmark {
+.toggle input:checked~.toggle__checkmark {
   background-color: var(--blue);
 }
 
-.toggle_checkmark:after {
+.toggle__checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.toggle input:checked~.toggle_checkmark:after {
+.toggle input:checked~.toggle__checkmark:after {
   display: block;
 }
 
-.toggle .toggle_checkmark:after {
+.toggle .toggle__checkmark:after {
   left: 8px;
   top: 4px;
   width: 8px;

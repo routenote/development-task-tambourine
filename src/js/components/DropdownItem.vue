@@ -1,7 +1,7 @@
 <template>
-    <button class="item-box">
+    <button class="item">
         <PlusIcon v-if="hasPlusIcon" status="grey"></PlusIcon>
-        <p class="item-name">{{ name }}</p>
+        <p class="item__name">{{ name }}</p>
     </button>
 </template>
 
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-.item-box {
+.item {
     display: flex;
     width: 100%;
     padding: 8px 12px;
@@ -38,20 +38,20 @@ export default {
     transition: background-color 0.3s ease;
 }
 
-.item-box:hover {
+.item:hover {
     background-color: var(--light-grey);
 }
 
-.item-name {
+.item__name {
     color: var(--charcoal);
 }
 
 @media only screen and (max-width: 720px) {
-    .item-box:hover {
+    .item:hover {
         background-color: unset;
     }
 
-    .item-box:active {
+    .item:active {
         background-color: var(--light-grey);
     }
 }

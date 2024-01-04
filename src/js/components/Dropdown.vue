@@ -1,5 +1,5 @@
 <template>
-    <div :class="['dropdown-box', isOpen ? 'dropdown-box__show' : '']">
+    <div :class="['dropdown', isOpen ? 'dropdown_show' : '']">
         <DropdownItem v-for="item in items" :key="item.id" :name="item.name" :has-plus-icon="hasPlusIcon" />
     </div>
 </template>
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.dropdown-box {
+.dropdown {
     display: none;
     width: 14.6vw;
     min-width: 280px;
@@ -53,12 +53,12 @@ export default {
     background-color: #ffffff;
 }
 
-.dropdown-box__show {
+.dropdown_show {
     display: flex;
 }
 
 @media only screen and (max-width: 720px) {
-    .dropdown-box {
+    .dropdown {
         width: 100vw;
         max-width: unset;
         min-width: unset;
