@@ -31,9 +31,9 @@
   
 <script>
 
-    import Fillericon from './Fillericon.vue';
-    import Iconarrow from './Iconarrow.vue';
-    import eventBus from './eventBus';
+    import Fillericon from './Fillericon.vue'; // SVG icon import component
+    import Iconarrow from './Iconarrow.vue'; // SVG icon import component
+    import eventBus from './eventBus'; // Event handler to communicate between parent and child component
 
 
   export default {

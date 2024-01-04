@@ -15,8 +15,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Fillericon_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Fillericon.vue */ "./src/js/components/Fillericon.vue");
 /* harmony import */ var _Iconarrow_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Iconarrow.vue */ "./src/js/components/Iconarrow.vue");
 /* harmony import */ var _eventBus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./eventBus */ "./src/js/components/eventBus.js");
-
-
+ // SVG icon import component
+ // SVG icon import component
+ // Event handler to communicate between parent and child component
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Dropbutton',
@@ -331,6 +332,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+// Vue instance for Parent * Child event handling. 
 var eventBus = new Vue();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (eventBus);
 
