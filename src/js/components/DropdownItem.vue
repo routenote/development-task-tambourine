@@ -38,7 +38,7 @@
     };
 </script>
 
-<style>
+<style scoped>
 .item-box{
     display: flex;
     width: 100%;
@@ -55,11 +55,7 @@
 }
 
 .item-name{
-    color:#202020;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; 
+    color:var(--charcoal);
 }
 
 @media only screen and (max-width: 720px){

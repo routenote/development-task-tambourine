@@ -1,5 +1,5 @@
 <template>
-    <div :class="['main-container']" :style="cssVars">
+    <div class="main-container" :style="cssVars">
         <label class="toggle">Button with icon
             <input ref="buttonCheck" type="checkbox" v-model="hasPlusIcon">
             <span class="toggle_checkmark"></span>
@@ -34,7 +34,8 @@
                     '--light-grey': 'rgba(160, 160, 171, 0.12)',
                     '--white': '#ffffff',
                     '--dark-grey': '#9898A3',
-                    '--charcoal': '#202020'
+                    '--charcoal': '#202020',
+                    '--blue': '#2196F3',
                 }
             }
         },
@@ -47,7 +48,6 @@
 </script>
 
 <style>
-
 .main-container{
     font-family: Cera PRO;
     width: 100vw;
@@ -67,7 +67,6 @@
   position: relative;
   padding-left: 35px;
   cursor: pointer;
-  font-size: 1rem;
   color: var(--charcoal);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -98,7 +97,7 @@
 }
 
 .toggle input:checked ~ .toggle_checkmark {
-  background-color: #2196F3;
+  background-color: var(--blue);
 }
 
 .toggle_checkmark:after {

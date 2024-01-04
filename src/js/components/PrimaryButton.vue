@@ -38,7 +38,7 @@
     };
 </script>
 
-<style>
+<style scoped>
 .button-box{
   width: fit-content;
   display: flex;
@@ -50,12 +50,6 @@
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-@media only screen and (max-width: 720px){
-  .button-box{
-    margin: 5vw;
-  }
 }
 
 .button-box__clicked{
@@ -71,10 +65,12 @@
 .button-name{
   color: var(--white);
   /* font-feature-settings: 'clig' off, 'liga' off; */
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
+  font-family: Cera PRO medium;
 }
 
+@media only screen and (max-width: 720px){
+  .button-box{
+    margin: 5vw;
+  }
+}
 </style>
