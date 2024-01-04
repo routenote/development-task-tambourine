@@ -19,7 +19,7 @@ export default {
     props: {
         isOpen: {
             type: Boolean,
-            default: false,
+            default: false
         }
     }
 }

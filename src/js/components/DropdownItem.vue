@@ -16,7 +16,7 @@ export default {
     props: {
         hasPlusIcon: {
             type: Boolean,
-            default: true,
+            default: true
         },
         name: {
             type: String,

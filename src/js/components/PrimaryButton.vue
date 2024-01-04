@@ -19,7 +19,7 @@ export default {
   props: {
     hasPlusIcon: {
       type: Boolean,
-      default: false,
+      default: false
     },
     toggleDropdown: {
       type: Function,
@@ -27,7 +27,7 @@ export default {
     },
     isOpen: {
       type: Boolean,
-      default: false,
+      default: false
     }
   },
   data() {
@@ -64,7 +64,6 @@ export default {
 
 .button__name {
   color: var(--white);
-  /* font-feature-settings: 'clig' off, 'liga' off; */
   font-family: Cera PRO medium;
 }
 

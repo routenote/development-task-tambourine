@@ -131,7 +131,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      isMobileDevice: false,
       isOpen: false,
       hasPlusIcon: true
     };
@@ -185,7 +184,7 @@ var colors = {
     }
   },
   computed: {
-    iconBackgroundColor: function iconBackgroundColor() {
+    iconColor: function iconColor() {
       return colors[this.status];
     }
   }
@@ -452,7 +451,7 @@ var render = function render() {
     }
   }, [_c("path", {
     style: {
-      fill: _vm.iconBackgroundColor
+      fill: _vm.iconColor
     },
     attrs: {
       "fill-rule": "evenodd",
@@ -526,8 +525,6 @@ var requireComponent = __webpack_require__("./src/js/components sync recursive [
 requireComponent.keys().forEach(function (fileName) {
   var componentConfig = requireComponent(fileName);
   var componentName = lodash_upperFirst__WEBPACK_IMPORTED_MODULE_1___default()(lodash_camelCase__WEBPACK_IMPORTED_MODULE_2___default()(fileName.split('/').pop().replace(/\.\w+$/, '')));
-  console.log(componentName); //remove
-
   vue__WEBPACK_IMPORTED_MODULE_0__["default"].component(componentName, componentConfig["default"] || componentConfig);
 });
 window.components = vue__WEBPACK_IMPORTED_MODULE_0__["default"].extend({});
@@ -575,7 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown[data-v-21ab7a5d] {\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid var(--mid-grey);\n    background-color: #ffffff;\n}\n.dropdown_show[data-v-21ab7a5d] {\n    display: flex;\n}\n@media only screen and (max-width: 720px) {\n.dropdown[data-v-21ab7a5d] {\n        width: 100vw;\n        max-width: unset;\n        min-width: unset;\n        border: none;\n        border-top: 2px solid var(--mid-grey);\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown[data-v-21ab7a5d] {\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid var(--mid-grey);\n    background-color: var(--white);\n}\n.dropdown_show[data-v-21ab7a5d] {\n    display: flex;\n}\n@media only screen and (max-width: 720px) {\n.dropdown[data-v-21ab7a5d] {\n        width: 100vw;\n        max-width: unset;\n        min-width: unset;\n        border: none;\n        border-top: 2px solid var(--mid-grey);\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -647,7 +644,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.button[data-v-9ecd6690] {\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: var(--mid-grey);\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.button_clicked[data-v-9ecd6690] {\n  background-color: var(--dark-grey);\n  transition: background-color 0.3s ease;\n}\n.button[data-v-9ecd6690]:disabled {\n  background-color: var(--mid-grey-light);\n  cursor: default;\n}\n.button__name[data-v-9ecd6690] {\n  color: var(--white);\n  /* font-feature-settings: 'clig' off, 'liga' off; */\n  font-family: Cera PRO medium;\n}\n@media only screen and (max-width: 720px) {\n.button[data-v-9ecd6690] {\n    margin: 5vw;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.button[data-v-9ecd6690] {\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: var(--mid-grey);\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.button_clicked[data-v-9ecd6690] {\n  background-color: var(--dark-grey);\n  transition: background-color 0.3s ease;\n}\n.button[data-v-9ecd6690]:disabled {\n  background-color: var(--mid-grey-light);\n  cursor: default;\n}\n.button__name[data-v-9ecd6690] {\n  color: var(--white);\n  font-family: Cera PRO medium;\n}\n@media only screen and (max-width: 720px) {\n.button[data-v-9ecd6690] {\n    margin: 5vw;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

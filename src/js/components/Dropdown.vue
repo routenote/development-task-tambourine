@@ -15,12 +15,12 @@ export default {
     props: {
         isOpen: {
             type: Boolean,
-            default: false,
+            default: false
         },
         hasPlusIcon: {
             type: Boolean,
-            default: true,
-        },
+            default: true
+        }
     },
     data() {
         return {
@@ -29,7 +29,7 @@ export default {
                 { id: '1', name: 'Option' },
                 { id: '2', name: 'Option' },
                 { id: '3', name: 'Option' },
-                { id: '4', name: 'Option' },
+                { id: '4', name: 'Option' }
             ]
         }
     }
@@ -50,7 +50,7 @@ export default {
     flex-shrink: 0;
     border-radius: 2px;
     border: 2px solid var(--mid-grey);
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .dropdown_show {

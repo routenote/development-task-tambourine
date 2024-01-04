@@ -21,9 +21,8 @@ export default {
   },
   data() {
     return {
-      isMobileDevice: false,
       isOpen: false,
-      hasPlusIcon: true,
+      hasPlusIcon: true
     }
   },
   computed: {
@@ -35,7 +34,7 @@ export default {
         '--white': '#ffffff',
         '--dark-grey': '#9898A3',
         '--charcoal': '#202020',
-        '--blue': '#2196F3',
+        '--blue': '#2196F3'
       }
     }
   },

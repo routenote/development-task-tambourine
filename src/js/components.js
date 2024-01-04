@@ -20,7 +20,6 @@ requireComponent.keys().forEach(fileName => {
             .replace(/\.\w+$/, '')
         )
     )
-    console.log(componentName) //remove
 
     Vue.component(
         componentName,componentConfig.default || componentConfig
