@@ -1,12 +1,14 @@
 <template>
+  <!------------Responsive design----------->
    <div class="md:w-80 md:h-80 md:bg-gray-mid md:bg-opacity-12">
     <!--Make a flex components, add click event and controls the colour of button -->
       <div class="text-white font-CeraProMedium text-base text-center w-36 h-10 flex flex-row py-1" :class="[ isenable ? 'bg-gray-dark' :'pointer-events-none bg-gray-mid bg-opacity-12 ']" @click="sendCustomEvent()">
           <div v-if=icon class="basis-1/4">
-            <!---for icon colour change----->
+            <!---for button icon colour-------->
           <Fillericon colour="fill-white"> </Fillericon>
 
           </div>
+          <!--------title----->
           <div class="basis-1/2 p-1">
               <a href="#">
                 {{ title }} 
@@ -40,16 +42,15 @@
     data () {
       return {
         isOpen: false,
-        isEnable: true,
       }
     },
     components: {
       Fillericon,
       Iconarrow,
     },
-    methods: {
+    methods: {  
       sendCustomEvent() {
-      // sending the event]
+      // sending the event to Chile Component (List Items)
       this.isOpen = !this.isOpen
       eventBus.$emit('custom-event')
     },

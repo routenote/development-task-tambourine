@@ -23,8 +23,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['title', 'icon', 'isenable'],
   data: function data() {
     return {
-      isOpen: false,
-      isEnable: true
+      isOpen: false
     };
   },
   components: {
@@ -33,7 +32,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     sendCustomEvent: function sendCustomEvent() {
-      // sending the event]
+      // sending the event to Chile Component (List Items)
       this.isOpen = !this.isOpen;
       _eventBus__WEBPACK_IMPORTED_MODULE_2__["default"].$emit('custom-event');
     }
@@ -172,7 +171,7 @@ var render = function render() {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("\n             " + _vm._s(_vm.title) + " \n           ")])]), _vm._v(" "), _vm.isOpen ? _c("div", {
+  }, [_vm._v("\n              " + _vm._s(_vm.title) + " \n            ")])]), _vm._v(" "), _vm.isOpen ? _c("div", {
     staticClass: "pr-2 pt-2 basis-1/4"
   }, [_c("Iconarrow", {
     attrs: {
