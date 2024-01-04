@@ -1,5 +1,5 @@
 <template>
-    <div :class="['main-container']">
+    <div :class="['main-container']" :style="cssVars">
         <label class="toggle">Button with icon
             <input ref="buttonCheck" type="checkbox" v-model="hasPlusIcon">
             <span class="toggle_checkmark"></span>
@@ -25,6 +25,18 @@
             isOpen: false,
             hasPlusIcon: true,
            }
+        },
+        computed: {
+            cssVars() {
+                return {
+                    '--mid-grey': '#AEAEBA',
+                    '--mid-grey-light': 'rgba(160, 160, 171, 0.16)',
+                    '--light-grey': 'rgba(160, 160, 171, 0.12)',
+                    '--white': '#ffffff',
+                    '--dark-grey': '#9898A3',
+                    '--charcoal': '#202020'
+                }
+            }
         },
         methods: {
             toggleDropdown(){
@@ -56,7 +68,7 @@
   padding-left: 35px;
   cursor: pointer;
   font-size: 1rem;
-  color: #202020;
+  color: var(--charcoal);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -77,12 +89,12 @@
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: rgba(160, 160, 171, 0.12);
+  background-color: var(--light-grey);
   transition: background-color 0.3s ease;
 }
 
 .toggle:hover input ~ .toggle_checkmark {
-  background-color: rgba(160, 160, 171, 0.16);
+  background-color: var(--mid-grey-light);
 }
 
 .toggle input:checked ~ .toggle_checkmark {
@@ -104,7 +116,7 @@
   top: 4px;
   width: 8px;
   height: 14px;
-  border: solid #ffffff;
+  border: solid var(--white);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -116,7 +128,7 @@
     height: 100vh;
     justify-content: space-between;
     gap: unset;
-    background-color: rgba(160, 160, 171, 0.16);
+    background-color: var(--mid-grey-light);
     padding: 0;
   }
 }

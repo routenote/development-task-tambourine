@@ -42,7 +42,7 @@
     align-items: flex-start;
     flex-shrink: 0;
     border-radius: 2px;
-    border: 2px solid  #AEAEBA;
+    border: 2px solid  var(--mid-grey);
     background-color:  #ffffff;
 }
 
@@ -56,7 +56,7 @@
     max-width: unset;
     min-width: unset;
     border: none;
-    border-top: 2px solid  #AEAEBA;
+    border-top: 2px solid  var(--mid-grey);
   }
 }
 

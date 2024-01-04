@@ -39,13 +39,6 @@
 </script>
 
 <style>
-:root{
-    --mid-grey: var(#AEAEBA);
-    --mid-grey-light: var(rgba(160, 160, 171, 0.16));
-    --white: var(#ffffff);
-    --dark-grey: var(#9898A3);
-    --charcoal: var(#202020);
-}
 .button-box{
   width: fit-content;
   display: flex;
@@ -53,7 +46,7 @@
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: #AEAEBA;
+  background-color: var(--mid-grey);
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -66,17 +59,17 @@
 }
 
 .button-box__clicked{
-  background-color: #9898A3; 
+  background-color: var(--dark-grey); 
   transition: background-color 0.3s ease;
 }
 
 .button-box:disabled{
-  background-color: rgba(160, 160, 171, 0.16);
+  background-color: var(--mid-grey-light);
   cursor: not-allowed;
 }
 
 .button-name{
-  color: #ffffff;
+  color: var(--white);
   /* font-feature-settings: 'clig' off, 'liga' off; */
   font-size: 1rem;
   font-style: normal;

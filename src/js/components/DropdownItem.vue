@@ -51,7 +51,7 @@
 }
 
 .item-box:hover{
-    background-color: rgba(160, 160, 171, 0.12);
+    background-color: var(--light-grey);
 }
 
 .item-name{
@@ -68,7 +68,7 @@
     }
 
     .item-box:active{
-        background-color: rgba(160, 160, 171, 0.12);
+        background-color: var(--light-grey);
     }
 }
 

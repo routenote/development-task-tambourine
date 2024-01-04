@@ -100,29 +100,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'icon-button',
-  data: function data() {
-    return {
-      name: 'Test',
-      message: 'I like vue'
-    };
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/MainContainer.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/MainContainer.vue?vue&type=script&lang=js& ***!
@@ -150,6 +127,18 @@ __webpack_require__.r(__webpack_exports__);
       isOpen: false,
       hasPlusIcon: true
     };
+  },
+  computed: {
+    cssVars: function cssVars() {
+      return {
+        '--mid-grey': '#AEAEBA',
+        '--mid-grey-light': 'rgba(160, 160, 171, 0.16)',
+        '--light-grey': 'rgba(160, 160, 171, 0.12)',
+        '--white': '#ffffff',
+        '--dark-grey': '#9898A3',
+        '--charcoal': '#202020'
+      };
+    }
   },
   methods: {
     toggleDropdown: function toggleDropdown() {
@@ -368,29 +357,6 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=template&id=268a3d57&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=template&id=268a3d57& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* binding */ render),
-/* harmony export */   staticRenderFns: () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", [_c("h2", [_vm._v(_vm._s(_vm.name))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.message))])]);
-};
-var staticRenderFns = [];
-render._withStripped = true;
-
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/MainContainer.vue?vue&type=template&id=dcc93ca8&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/MainContainer.vue?vue&type=template&id=dcc93ca8& ***!
@@ -407,7 +373,8 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    "class": ["main-container"]
+    "class": ["main-container"],
+    style: _vm.cssVars
   }, [_c("label", {
     staticClass: "toggle"
   }, [_vm._v("Button with icon\n        "), _c("input", {
@@ -611,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown-box{\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid  #AEAEBA;\n    background-color:  #ffffff;\n}\n.dropdown-box__show{\n    display: flex;\n}\n@media only screen and (max-width: 720px){\n.dropdown-box{\n    width: 100vw;\n    max-width: unset;\n    min-width: unset;\n    border: none;\n    border-top: 2px solid  #AEAEBA;\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.dropdown-box{\n    display: none;\n    width: 14.6vw;\n    min-width: 280px;\n    max-width: 400px;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 16px 0 14px 0;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-start;\n    flex-shrink: 0;\n    border-radius: 2px;\n    border: 2px solid  var(--mid-grey);\n    background-color:  #ffffff;\n}\n.dropdown-box__show{\n    display: flex;\n}\n@media only screen and (max-width: 720px){\n.dropdown-box{\n    width: 100vw;\n    max-width: unset;\n    min-width: unset;\n    border: none;\n    border-top: 2px solid  var(--mid-grey);\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -635,7 +602,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box{\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box:hover{\n    background-color: rgba(160, 160, 171, 0.12);\n}\n.item-name{\n    color:#202020;\n    font-size: 1rem;\n    font-style: normal;\n    font-weight: 400;\n    line-height: 1.5;\n}\n@media only screen and (max-width: 720px){\n.item-box:hover{\n        background-color: unset;\n}\n.item-box:active{\n        background-color: rgba(160, 160, 171, 0.12);\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box{\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box:hover{\n    background-color: var(--light-grey);\n}\n.item-name{\n    color:#202020;\n    font-size: 1rem;\n    font-style: normal;\n    font-weight: 400;\n    line-height: 1.5;\n}\n@media only screen and (max-width: 720px){\n.item-box:hover{\n        background-color: unset;\n}\n.item-box:active{\n        background-color: var(--light-grey);\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -659,7 +626,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-container{\n    font-family: Cera PRO;\n    width: 100vw;\n    height: auto;\n    background-color: var(--white);\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    gap: 8px;\n    padding: 2vw;\n}\n.toggle {\n  display: flex;\n  gap: 5px;\n  align-items: center;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: #202020;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n}\n.toggle input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n  height: 0;\n  width: 0;\n}\n.toggle_checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  background-color: rgba(160, 160, 171, 0.12);\n  transition: background-color 0.3s ease;\n}\n.toggle:hover input ~ .toggle_checkmark {\n  background-color: rgba(160, 160, 171, 0.16);\n}\n.toggle input:checked ~ .toggle_checkmark {\n  background-color: #2196F3;\n}\n.toggle_checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n.toggle input:checked ~ .toggle_checkmark:after {\n  display: block;\n}\n.toggle .toggle_checkmark:after {\n  left: 8px;\n  top: 4px;\n  width: 8px;\n  height: 14px;\n  border: solid #ffffff;\n  border-width: 0 3px 3px 0;\n  transform: rotate(45deg);\n}\n@media only screen and (max-width: 720px){\n.main-container{\n    height: 100vh;\n    justify-content: space-between;\n    gap: unset;\n    background-color: rgba(160, 160, 171, 0.16);\n    padding: 0;\n}\n.toggle{\n    display: none;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-container{\n    font-family: Cera PRO;\n    width: 100vw;\n    height: auto;\n    background-color: var(--white);\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    gap: 8px;\n    padding: 2vw;\n}\n.toggle {\n  display: flex;\n  gap: 5px;\n  align-items: center;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  font-size: 1rem;\n  color: var(--charcoal);\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n}\n.toggle input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n  height: 0;\n  width: 0;\n}\n.toggle_checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  background-color: var(--light-grey);\n  transition: background-color 0.3s ease;\n}\n.toggle:hover input ~ .toggle_checkmark {\n  background-color: var(--mid-grey-light);\n}\n.toggle input:checked ~ .toggle_checkmark {\n  background-color: #2196F3;\n}\n.toggle_checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n.toggle input:checked ~ .toggle_checkmark:after {\n  display: block;\n}\n.toggle .toggle_checkmark:after {\n  left: 8px;\n  top: 4px;\n  width: 8px;\n  height: 14px;\n  border: solid var(--white);\n  border-width: 0 3px 3px 0;\n  transform: rotate(45deg);\n}\n@media only screen and (max-width: 720px){\n.main-container{\n    height: 100vh;\n    justify-content: space-between;\n    gap: unset;\n    background-color: var(--mid-grey-light);\n    padding: 0;\n}\n.toggle{\n    display: none;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -683,7 +650,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n:root{\n    --mid-grey: var(#AEAEBA);\n    --mid-grey-light: var(rgba(160, 160, 171, 0.16));\n    --white: var(#ffffff);\n    --dark-grey: var(#9898A3);\n    --charcoal: var(#202020);\n}\n.button-box{\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: #AEAEBA;\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n@media only screen and (max-width: 720px){\n.button-box{\n    margin: 5vw;\n}\n}\n.button-box__clicked{\n  background-color: #9898A3; \n  transition: background-color 0.3s ease;\n}\n.button-box:disabled{\n  background-color: rgba(160, 160, 171, 0.16);\n  cursor: not-allowed;\n}\n.button-name{\n  color: #ffffff;\n  /* font-feature-settings: 'clig' off, 'liga' off; */\n  font-size: 1rem;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 1.5;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.button-box{\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 16px;\n  background-color: var(--mid-grey);\n  border-radius: 2px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n@media only screen and (max-width: 720px){\n.button-box{\n    margin: 5vw;\n}\n}\n.button-box__clicked{\n  background-color: var(--dark-grey); \n  transition: background-color 0.3s ease;\n}\n.button-box:disabled{\n  background-color: var(--mid-grey-light);\n  cursor: not-allowed;\n}\n.button-name{\n  color: var(--white);\n  /* font-feature-settings: 'clig' off, 'liga' off; */\n  font-size: 1rem;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 1.5;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2492,45 +2459,6 @@ component.options.__file = "src/js/components/DropdownItem.vue"
 
 /***/ }),
 
-/***/ "./src/js/components/IconButton.vue":
-/*!******************************************!*\
-  !*** ./src/js/components/IconButton.vue ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IconButton.vue?vue&type=template&id=268a3d57& */ "./src/js/components/IconButton.vue?vue&type=template&id=268a3d57&");
-/* harmony import */ var _IconButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IconButton.vue?vue&type=script&lang=js& */ "./src/js/components/IconButton.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _IconButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__.render,
-  _IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/js/components/IconButton.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./src/js/components/MainContainer.vue":
 /*!*********************************************!*\
   !*** ./src/js/components/MainContainer.vue ***!
@@ -2700,22 +2628,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/components/IconButton.vue?vue&type=script&lang=js&":
-/*!*******************************************************************!*\
-  !*** ./src/js/components/IconButton.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IconButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./IconButton.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IconButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
 /***/ "./src/js/components/MainContainer.vue?vue&type=script&lang=js&":
 /*!**********************************************************************!*\
   !*** ./src/js/components/MainContainer.vue?vue&type=script&lang=js& ***!
@@ -2811,23 +2723,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   staticRenderFns: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DropdownItem_vue_vue_type_template_id_feaba4e0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DropdownItem_vue_vue_type_template_id_feaba4e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DropdownItem.vue?vue&type=template&id=feaba4e0& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/DropdownItem.vue?vue&type=template&id=feaba4e0&");
-
-
-/***/ }),
-
-/***/ "./src/js/components/IconButton.vue?vue&type=template&id=268a3d57&":
-/*!*************************************************************************!*\
-  !*** ./src/js/components/IconButton.vue?vue&type=template&id=268a3d57& ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   staticRenderFns: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_IconButton_vue_vue_type_template_id_268a3d57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./IconButton.vue?vue&type=template&id=268a3d57& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/components/IconButton.vue?vue&type=template&id=268a3d57&");
 
 
 /***/ }),
@@ -15009,7 +14904,6 @@ var map = {
 	"./ArrowIcon.vue": "./src/js/components/ArrowIcon.vue",
 	"./Dropdown.vue": "./src/js/components/Dropdown.vue",
 	"./DropdownItem.vue": "./src/js/components/DropdownItem.vue",
-	"./IconButton.vue": "./src/js/components/IconButton.vue",
 	"./MainContainer.vue": "./src/js/components/MainContainer.vue",
 	"./PlusIcon.vue": "./src/js/components/PlusIcon.vue",
 	"./PrimaryButton.vue": "./src/js/components/PrimaryButton.vue"
