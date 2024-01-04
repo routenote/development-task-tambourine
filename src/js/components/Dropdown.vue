@@ -1,10 +1,6 @@
 <template>
     <div :class="['dropdown-box', isOpen ? 'dropdown-box__show' : '']">
-        <DropdownItem :has-plus-icon="hasPlusIcon"></DropdownItem>
-        <DropdownItem :has-plus-icon="hasPlusIcon"></DropdownItem>
-        <DropdownItem :has-plus-icon="hasPlusIcon"></DropdownItem>
-        <DropdownItem :has-plus-icon="hasPlusIcon"></DropdownItem>
-        <DropdownItem :has-plus-icon="hasPlusIcon"></DropdownItem>
+        <DropdownItem v-for="item in items" :key="item.id" :name="item.name" :has-plus-icon="hasPlusIcon"/>
     </div>
 </template>
 
@@ -25,11 +21,22 @@
                 type: Boolean,
                 default: true,
             },
+        },
+        data(){
+            return{
+                items: [
+                    { id: '0', name: 'Option' },
+                    { id: '1', name: 'Option' },
+                    { id: '2', name: 'Option' },
+                    { id: '3', name: 'Option' },
+                    { id: '4', name: 'Option' },
+                ]
+            }
         }
     };
 </script>
 
-<style>
+<style scoped>
 .dropdown-box{
     display: none;
     width: 14.6vw;
