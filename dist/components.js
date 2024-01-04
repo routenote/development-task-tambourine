@@ -103,18 +103,6 @@ __webpack_require__.r(__webpack_exports__);
       type: String,
       "default": 'Option'
     }
-  },
-  data: function data() {
-    return {
-      itemClicked: false
-    };
-  },
-  methods: {
-    onClick: function onClick() {
-      if (window.innerWidth < 720) {
-        this.itemClicked != this.itemClicked;
-      }
-    }
   }
 });
 
@@ -611,7 +599,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box[data-v-feaba4e0]{\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box[data-v-feaba4e0]:hover{\n    background-color: var(--light-grey);\n}\n.item-name[data-v-feaba4e0]{\n    color:var(--charcoal);\n}\n@media only screen and (max-width: 720px){\n.item-box[data-v-feaba4e0]:hover{\n        background-color: unset;\n}\n.item-box[data-v-feaba4e0]:active{\n        background-color: var(--light-grey);\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.item-box[data-v-feaba4e0]{\n    display: flex;\n    width: 100%;\n    padding: 8px 12px;\n    flex-direction: row;\n    align-items: center;\n    gap: 4px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n}\n.item-box[data-v-feaba4e0]:hover{\n    background-color: var(--light-grey);\n}\n.item-name[data-v-feaba4e0]{\n    color: var(--charcoal);\n}\n@media only screen and (max-width: 720px){\n.item-box[data-v-feaba4e0]:hover{\n        background-color: unset;\n}\n.item-box[data-v-feaba4e0]:active{\n        background-color: var(--light-grey);\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -22,18 +22,6 @@
                 type: String,
                 default: 'Option'
             }
-        },
-        data(){
-            return{
-                itemClicked: false,
-            }
-        },
-        methods: {
-            onClick(){
-                if(window.innerWidth < 720){
-                    this.itemClicked != this.itemClicked;
-                }
-            }
         }
     };
 </script>
@@ -55,7 +43,7 @@
 }
 
 .item-name{
-    color:var(--charcoal);
+    color: var(--charcoal);
 }
 
 @media only screen and (max-width: 720px){
