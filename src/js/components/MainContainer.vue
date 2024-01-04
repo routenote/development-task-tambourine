@@ -40,7 +40,7 @@
     font-family: Cera PRO;
     width: 100vw;
     height: auto;
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -77,11 +77,12 @@
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: rgba(160, 160, 171, 0.12);
+  transition: background-color 0.3s ease;
 }
 
 .toggle:hover input ~ .toggle_checkmark {
-  background-color: #ccc;
+  background-color: rgba(160, 160, 171, 0.16);
 }
 
 .toggle input:checked ~ .toggle_checkmark {
@@ -103,7 +104,7 @@
   top: 4px;
   width: 8px;
   height: 14px;
-  border: solid white;
+  border: solid #ffffff;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
