@@ -59,7 +59,7 @@ export default {
 
 .button-box:disabled {
   background-color: var(--mid-grey-light);
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .button-name {
