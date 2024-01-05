@@ -12,7 +12,7 @@
  **/
 
 <template>
-    <div class="relative inline-block text-left">
+    <div class="relative text-left flex">
         <button @click="toggleDropdown" :disabled="error" :class="{ 'bg-disabled': error, 'bg-mid-grey': !error }"
             class="btn flex justify-between items-center pt-2 pb-2 pl-3 pr-3 text-white gap-3 rounded-sm cursor-pointer w-auto h-10 mw">
             <img v-if="buttonIcon" src="../../assets/option-icon-white.svg" alt="button icon" class="w-4 h-4 ">
@@ -25,17 +25,24 @@
             <Option v-for="(option, index) in options" :key="index" :option="option" :icon="optionIcon"
                 @select="selectOption(option, index)" />
         </div>
+        <div class="fixed right-3 top-3 w-28">
+            <Toggle :toggleBoolean.sync="buttonIcon" refName="Button Icon" />
+            <Toggle :toggleBoolean.sync="optionIcon" refName="Option Icon" />
+            <Toggle :toggleBoolean.sync="error" refName="Disabled" />
+        </div>
     </div>
 </template>
 
 <script>
 import { ref } from 'vue';
 import Option from './option.vue';
+import Toggle from './toggle.vue';
 
 export default {
     name: 'Dropdown',
     components: {
-        Option
+        Option,
+        Toggle
     },
     setup() {
         const buttonIcon = ref(true); // boolean to control whether to show button icon or not
@@ -60,7 +67,6 @@ export default {
         },
         selectOption(option, index) {
             this.showDropdown = false;
-            console.log(`You selected ${option} at index ${index}`);
         }
     }
 };

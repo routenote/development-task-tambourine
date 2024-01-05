@@ -443,6 +443,9 @@ body {
 .fixed{
   position: fixed;
 }
+.absolute{
+  position: absolute;
+}
 .relative{
   position: relative;
 }
@@ -451,6 +454,12 @@ body {
 }
 .left-0{
   left: 0px;
+}
+.right-3{
+  right: 0.75rem;
+}
+.top-3{
+  top: 0.75rem;
 }
 .block{
   display: block;
@@ -475,6 +484,9 @@ body {
 }
 .w-full{
   width: 100%;
+}
+.w-28{
+  width: 7rem;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -505,6 +517,9 @@ body {
 }
 .rounded-sm{
   border-radius: 2px;
+}
+.border{
+  border-width: 1px;
 }
 .border-t-2{
   border-top-width: 2px;
@@ -562,6 +577,13 @@ body {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 @font-face {
   font-family: "CeraPro";
