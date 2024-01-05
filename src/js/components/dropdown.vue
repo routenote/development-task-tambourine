@@ -1,15 +1,15 @@
 /**
- * Dropdown component for displaying a button that toggles a dropdown menu.
+ * Dropdown component for displaying a button and a dropdown menu.
  *
- * @description The Dropdown component displays a button that, when clicked, toggles a dropdown menu. The dropdown menu contains a list of options that can be selected.
- *
- * @prop {boolean} buttonIcon - A boolean value that controls whether to show an icon in the button or not.
- * @prop {boolean} optionIcon - A boolean value that controls whether to show an icon in the options or not.
- * @prop {boolean} error - A boolean value that controls whether to show an error/disabled button or not.
- * @prop {Array} options - An array of options to be displayed in the dropdown menu.
- *
- * @event select - Emitted when an option is selected from the dropdown menu. Returns the selected option and its index.
- **/
+ * @description The Dropdown component displays a button with an optional icon and a dropdown menu with selectable options.
+ * @props {boolean} buttonIcon - Controls whether to show the button icon or not.
+ * @props {boolean} optionIcon - Controls whether to show the options icon or not.
+ * @props {boolean} error - Controls whether to show the error button or not.
+ * @data {boolean} showDropdown - Controls whether to show the dropdown menu or not.
+ * @data {Array} options - The list of selectable options in the dropdown menu.
+ * @method toggleDropdown - Toggles the visibility of the dropdown menu.
+ * @method selectOption - Handles the selection of an option from the dropdown menu.
+ */
 
 <template>
     <div class="relative text-left flex">
