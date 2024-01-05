@@ -8,7 +8,6 @@ const requireComponent = require.context(
     true,
     /[A-Z]\w+\.(vue|js)$/
 )
-
 requireComponent.keys().forEach(fileName => {
     const componentConfig = requireComponent(fileName)
 

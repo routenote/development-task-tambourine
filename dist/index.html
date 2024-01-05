@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <div id="components" class="block w-full">
-            <div class="p-8 flex flex-col overflow-x-hidden justify-start items-start">
-                <!--insert components here-->
-            </div>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="components" class="block w-full">
+      <div class="p-8 flex flex-col overflow-x-hidden justify-start items-start">
+         Button with icon And Page list with icons
+        <button-component
+          :is-dropdown-visible="BtnAndPageListWithIconDropdown"
+          :view-icon="true"
+          :button-disabled="false"
+          @click.native="toggleDropDown('btnAndPageListWithIcon')"
+        ></button-component>
+        <page-list
+          :is-dropdown-visible="BtnAndPageListWithIconDropdown"
+          :view-icon="true"
+        ></page-list> 
+        <br />
+        
 
-        <script src="components.js"></script>
-        <script>
-            new components({
-                el: "#components"
-            })
-        </script>
-    </body>
+         Button without icon And Page list without icons
+        <button-component
+          :is-dropdown-visible="BtnAndPageListWithoutIconDropdown"
+          :view-icon="false"
+          :button-disabled="false"
+          @click.native="toggleDropDown('btnAndPageListWithoutIcon')"
+        ></button-component>
+        <page-list
+          :is-dropdown-visible="BtnAndPageListWithoutIconDropdown"
+          :view-icon="false"
+        ></page-list>
+        <br />
+
+        Button with icon And Page list without icons
+        <button-component
+          :is-dropdown-visible="BtnWithIconPageListWithoutIconDropdown"
+          :view-icon="true"
+          :button-disabled="false"
+          @click.native="toggleDropDown('btnWithIconPageListWithoutIcon')"
+        ></button-component>
+        <page-list
+          :is-dropdown-visible="BtnWithIconPageListWithoutIconDropdown"
+          :view-icon="false"
+        ></page-list>
+        <br />
+
+        Button without icon And Page list with icons
+        <button-component
+          :is-dropdown-visible="BtnWithoutIconPageListWithIconDropdown"
+          :view-icon="false"
+          :button-disabled="false"
+          @click.native="toggleDropDown('btnWithoutIconPageListWithIcon')"
+        ></button-component>
+        <page-list
+          :is-dropdown-visible="BtnWithoutIconPageListWithIconDropdown"
+          :view-icon="true"
+        ></page-list>
+        <br />
+
+         Disabled button
+        <button-component :is-dropdown-visible="false" :view-icon="true" :button-disabled="true"></button-component>
+      </div>
+    </div>
+
+    <script src="components.js"></script>
+    <script>
+      new components({
+        el: "#components",
+        data: {
+            BtnAndPageListWithIconDropdown: false,
+            BtnAndPageListWithoutIconDropdown: false,
+            BtnWithIconPageListWithoutIconDropdown:false,
+            BtnWithoutIconPageListWithIconDropdown:false,
+        },
+        methods: {
+          toggleDropDown(buttonType) {
+            if (buttonType === "btnAndPageListWithIcon") {
+              this.BtnAndPageListWithIconDropdown = !this.BtnAndPageListWithIconDropdown;
+            } else if (buttonType === "btnAndPageListWithoutIcon") {
+              this.BtnAndPageListWithoutIconDropdown = !this.BtnAndPageListWithoutIconDropdown;
+            }else if (buttonType === "btnWithIconPageListWithoutIcon") {
+              this.BtnWithIconPageListWithoutIconDropdown = !this.BtnWithIconPageListWithoutIconDropdown;
+            }else if (buttonType === "btnWithoutIconPageListWithIcon") {
+              this.BtnWithoutIconPageListWithIconDropdown = !this.BtnWithoutIconPageListWithIconDropdown;
+            }
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
