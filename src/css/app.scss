@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@import "tailwind";
 
-@import "tailwind"
+@font-face {
+    font-family: "CeraPro";
+    src: url("../css/cerapro-medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url("../css/cerapro-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer base {
+
+    body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
+    .btn {
+        font-family: 'cerapro-medium', sans-serif;
+    }
+
+    .option {
+        font-family: 'cerapro-regular', sans-serif;
+    }
+}
+

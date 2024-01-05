@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <div id="components" class="block w-full">
-            <div class="p-8 flex flex-col overflow-x-hidden justify-start items-start">
-                <!--insert components here-->
-            </div>
-        </div>
 
-        <script src="components.js"></script>
-        <script>
-            new components({
-                el: "#components"
-            })
-        </script>
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="components" class="block w-full">
+        <div class="p-8 flex flex-col justify-start items-start h-100vh w-100vw">
+            <!--insert components here-->
+            <dropdown></dropdown>
+        </div>
+    </div>
+
+    <script src="components.js"></script>
+    <script>
+    </script>
+</body>
+
 </html>
